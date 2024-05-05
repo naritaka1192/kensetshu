@@ -28,11 +28,12 @@ const handleClick=()=>{
   navigate('/Home')
 }
 const handleClick2=()=>{
-  navigate('/Content')
-}
-const handleClick3=()=>{
   navigate('/Civil')
 }
+const handleClick3=()=>{
+  navigate('/Content')
+}
+
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -67,7 +68,7 @@ const handleClick3=()=>{
               <ListItemIcon>
                 <InboxIcon />
               </ListItemIcon>
-              <ListItemText primary="Inbox" />
+              <ListItemText primary="ホーム" />
             </ListItemButton>
           </ListItem>
           
@@ -75,7 +76,7 @@ const handleClick3=()=>{
             <ListItemButton onClick={handleClick2}>
               <ListItemIcon>
               </ListItemIcon>
-              <ListItemText primary="Drafts" />
+              <ListItemText primary="土木工事業" />
             </ListItemButton>
           </ListItem>
 
@@ -83,7 +84,7 @@ const handleClick3=()=>{
             <ListItemButton onClick={handleClick3}>
               <ListItemIcon>
               </ListItemIcon>
-              <ListItemText primary="Drafts" />
+              <ListItemText primary="建築一式工事業" />
             </ListItemButton>
           </ListItem>
         </List>
@@ -106,3 +107,4 @@ const handleClick3=()=>{
     </Box>
   );
 }
+
