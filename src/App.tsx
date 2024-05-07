@@ -31,9 +31,12 @@ const handleClick2=()=>{
   navigate('/Civil')
 }
 const handleClick3=()=>{
-  navigate('/Content')
+  navigate('/Buildass')
 }
 
+const handleClick4=()=>{
+  navigate('/Jumping')
+}
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -87,7 +90,14 @@ const handleClick3=()=>{
               <ListItemText primary="建築一式工事業" />
             </ListItemButton>
           </ListItem>
-        </List>
+
+          <ListItem disablePadding>
+            <ListItemButton onClick={handleClick4}>
+              <ListItemIcon>
+              </ListItemIcon>
+              <ListItemText primary="とび・土工工事業" />
+            </ListItemButton>
+          </ListItem>        </List>
         <Divider />
 
       </Drawer>

@@ -1,23 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../App.css'; // この行を追加
 import Grid from '@mui/material/Grid';
 
 //土木
 const Civil = () => {
+  const [toggle,setToggle]=useState(false)
+
+  const handleToggle=()=>{
+    setToggle(!toggle)
+  }
+
   return (
     <div className="App">
       <Grid container>
         <Grid item>
       <h1>【土木工事業】</h1>
       <ul className="list">
-  <li>総合的な企画・<span style={{ color: 'red', fontWeight: 'bold' }}>指導・調整のもとに</span>土木工作物を完成させる総合工事業</li>
-  <li>地面に関わるさまざまなものの建設・修繕を行なう工事</li>
+  <li>総合的な企画・<span style={{ color: 'red', fontWeight: 'bold' }}>
+    指導・調整のもとに</span>土木工作物を完成させる総合工事業</li>
+
+  <li><span style={{ color: 'red', fontWeight: 'bold' }}>地面に関わる</span>さまざまなものの建設・修繕を行なう工事</li>
   <br/>
   <li>【代表的な工事】</li>
   <ul>
     <li>道路工事</li>
     <li>公道下等の下水道工事</li>
     <li>水路工事</li>
+    <li><button onClick={handleToggle}>押してみそ</button></li>
+    <li>{toggle ? "そうですよねぇ":"違うよねぇ"} </li>
   </ul>
   <br/>
 
@@ -30,9 +40,6 @@ const Civil = () => {
   </ul>
 </ul>
 
-      </Grid>
-      <Grid item>
-      　　<img src="/images/civil1.jpeg" className="image"/>
       </Grid>
       </Grid>
 

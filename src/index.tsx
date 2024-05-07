@@ -5,8 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './contents/home';
-import Content from './contents/content';
 import Civil from './contents/civil';
+import Buildass from './contents/buildass';
+import Jumping from './contents/jumping';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,9 +17,9 @@ root.render(
   <App />
   <Routes>
     <Route path='home' element={<Home />}/>
-    <Route path='content' element={<Content />}/>
+    <Route path='content' element={<Jumping />}/>
     <Route path='civil' element={<Civil />}/>
-
+    <Route path='buildass' element={<Buildass />}/>
   </Routes>
   </BrowserRouter>
 
